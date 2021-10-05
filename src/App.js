@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.css';
-import {toast} from 'react-toastify'
+import {toast, ToastContainer} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import {Switch, Route} from 'react-router-dom'
 import Login from './components/Login/Login'
 import Main from './components/Main/Main'
+import Profile from "./components/Profile/Profile";
 
 function App () {
 
@@ -21,9 +23,13 @@ function App () {
         }
     }
 
-
     return (
         <div className="App">
+            <ToastContainer
+                autoClose={2000}
+                hideProgressBar={true}
+                position={toast.POSITION.BOTTOM_CENTER}
+            />
             <Switch>
                 <Route
                     exact
@@ -34,6 +40,11 @@ function App () {
                     exact
                     path="/main"
                     render={props => <Main showToast={showToast} {...props} />}
+                />
+                <Route
+                    exact
+                    path="/profile"
+                    render={props => <Profile showToast={showToast} {...props} />}
                 />
             </Switch>
         </div>

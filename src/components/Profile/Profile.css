@@ -1,0 +1,126 @@
+.header_profile {
+    height: 70px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: #2c2f33;
+    box-shadow: 0 4px 4px #808888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_content {
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.viewRoot {
+    flex-direction: column;
+}
+
+.viewLoading {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    align-self: center;
+    object-fit: cover;
+}
+
+.user_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.textLabel {
+    font-weight: bold;
+    color: #2c2f33;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.textInput {
+    width: 500px;
+    align-self: center;
+    border: none;
+    background-color: #2c2f33;
+    border-radius: 3px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    margin-top: 10px;
+}
+
+input::placeholder {
+    color: rgb(199, 199, 199);
+}
+
+.btnUpdate {
+    background-color: #2c2f33;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    align-self: center;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.user_img {
+    position: relative;
+}
+
+.viewWrapInputFile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    background-color: rgba(1, 1, 1, 0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.viewInputFile {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    outline: 0;
+    z-index: -1;
+    opacity: 0;
+}
+
+.imgInputFile {
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
