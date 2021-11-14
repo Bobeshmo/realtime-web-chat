@@ -102,12 +102,12 @@ class Main extends Component {
                                 alt="icon avatar"
                             />
                             <div className="viewWrapContentItem">
-                <span className="textItem">{`Пользователь: ${
-                    item.data().nickname
-                }`}</span>
-                                <span className="textItem">{`Информация: ${
-                                    item.data().aboutMe ? item.data().aboutMe : 'Нет информации'
-                                }`}</span>
+                                <span className="textItem">
+                                    {`Пользователь: ${item.data().nickname}`}
+                                </span>
+                                <span className="textItem">
+                                    {`Информация: ${item.data().aboutMe ? item.data().aboutMe : 'Нет информации'}`}
+                                </span>
                             </div>
                         </button>
                     )
@@ -124,7 +124,7 @@ class Main extends Component {
             <div className="root">
                 {/* Шапка */}
                 <div className="header">
-                    <span>Добро пожаловать в WAB CHAT</span>
+                    <span>Добро пожаловать в WEB CHAT</span>
                     <img
                         className="icProfile"
                         alt="An icon default avatar"

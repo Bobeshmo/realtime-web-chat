@@ -6,6 +6,7 @@ import {Switch, Route} from 'react-router-dom'
 import Login from './components/Login/Login'
 import Main from './components/Main/Main'
 import Profile from "./components/Profile/Profile";
+import NoMatch from "./components/NoMatch/NoMatch";
 
 function App () {
 
@@ -46,6 +47,12 @@ function App () {
                     path="/profile"
                     render={props => <Profile showToast={showToast} {...props} />}
                 />
+                <Route
+                    exact
+                    path="*"
+                >
+                    <NoMatch />
+                </Route>
             </Switch>
         </div>
     );

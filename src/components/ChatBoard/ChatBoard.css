@@ -187,8 +187,6 @@ input::placeholder {
 }
 
 .viewItemLeft2 {
-    width: 300px;
-    height: auto;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 0px;
@@ -235,7 +233,7 @@ input::placeholder {
 
 .imgItemRight {
     object-fit: cover;
-    max-width: 300px;
+    max-width: 200px;
     height: auto;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -245,8 +243,8 @@ input::placeholder {
 
 .imgItemLeft {
     object-fit: cover;
-    width: 300px;
-    height: 300px;
+    max-width: 200px;
+    height: auto;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 0px;

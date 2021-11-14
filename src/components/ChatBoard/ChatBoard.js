@@ -317,13 +317,13 @@ export default class ChatBoard extends Component {
                                     <div className="viewItemLeft">
                                         <span className="textContentItem">{item.content}</span>
                                     </div>
-                                    </div>
-                                        {this.isLastMessageLeft(index) ? (
-                                            <span className="textTimeLeft">
+                                </div>
+                                {this.isLastMessageLeft(index) ? (
+                                    <span className="textTimeLeft">
                                                 {moment(Number(item.timestamp)).format('ll')}
                                             </span>
-                                        ) : null}
-                                    </div>
+                                ) : null}
+                            </div>
                         )
                     } else if (item.type === 1) {
                         viewListMessage.push(
@@ -464,7 +464,7 @@ export default class ChatBoard extends Component {
         let hash = 0
         for (let i = 0; i < str.length; i++) {
             hash += Math.pow(str.charCodeAt(i) * 31, str.length - i)
-            hash = hash & hash // Конверт в 32битное число
+            hash = hash & hash // Конвертируем в 32-битное число
         }
         return hash
     }
@@ -495,14 +495,8 @@ export default class ChatBoard extends Component {
     }
 
     isLastMessageLeft (index) {
-        if (
-            (index + 1 < this.listMessage.length &&
-                this.listMessage[index + 1].idFrom === this.currentUserId) ||
-            index === this.listMessage.length - 1
-        ) {
-            return true
-        } else {
-            return false
-        }
+        return (index + 1 < this.listMessage.length &&
+            this.listMessage[index + 1].idFrom === this.currentUserId) ||
+            index === this.listMessage.length - 1;
     }
 }
