@@ -124,7 +124,7 @@
 
 .viewListUser {
     overflow-y: scroll;
-    max-height: 90vh;
+    max-height: 100vh;
     padding-top: 10px;
     padding-bottom: 10px;
 
@@ -196,5 +196,5 @@
 .viewBoard {
     display: flex;
     flex: 1;
-    max-height: 90vh;
+    max-height: 100vh;
 }

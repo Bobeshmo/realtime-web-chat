@@ -1,10 +1,10 @@
-import moment from 'moment'
 import React, {Component} from 'react'
 import ReactLoading from 'react-loading'
-import app from '../../base'
 import images from '../Themes/Images'
-import './ChatBoard.css'
 import {AppString} from '../Const'
+import app from '../../base'
+import moment from 'moment'
+import './ChatBoard.css'
 
 export default class ChatBoard extends Component {
     constructor (props) {
