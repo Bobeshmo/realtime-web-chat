@@ -1,0 +1,13 @@
+.NoMatch {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.NoMatch > span {
+    font-size: 54px;
+    font-weight: bold;
+    color: #2c2f33;
+}
