@@ -12,13 +12,13 @@
     box-shadow: 0 4px 4px #808888;
     flex-direction: row;
     height: 70px;
+    position: relative;
 }
 
 .body {
-    height: calc(100vh - 75px);
+    height: calc(100vh - 70px);
     display: flex;
     flex-direction: row;
-    padding-top: 5px;
 }
 
 .viewLoading {
@@ -125,23 +125,7 @@
 .viewListUser {
     overflow-y: scroll;
     max-height: 100vh;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.viewListUser::-webkit-scrollbar-track {
-    padding: 2px 0;
-    background-color: #e8e8e8;
-}
-
-.viewListUser::-webkit-scrollbar {
-    width: 6px;
-}
-
-.viewListUser::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #203152;
+    border: 2px solid rgba(0, 0, 0, 0.2);
 }
 
 .viewWrapItem {
@@ -196,6 +180,24 @@
 
 .viewBoard {
     display: flex;
-    flex: 1;
-    max-height: 100vh;
+    flex-grow: 1;
+    max-height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .body {
+        flex-direction: column;
+    }
+
+    .viewListUser {
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: visible;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header span {
+        display: none;
+    }
 }

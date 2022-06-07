@@ -15,7 +15,7 @@ export default class WelcomeBoard extends Component {
                     src={this.props.currentUserAvatar}
                     alt="icon avatar"
                 />
-                <span className="textDesciptionWelcome">Давайте уже быстрее начнём беседу!</span>
+                <span className="textDescriptionWelcome">Давайте уже быстрее начнём беседу!</span>
             </div>
         )
     }

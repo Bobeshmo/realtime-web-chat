@@ -103,7 +103,7 @@ class Login extends Component {
                 <div className="header">WEB CHAT</div>
                 <div className="main">
                     <button className="btnLogin" type="submit" onClick={this.onLoginPress}>
-                        SIGN IN WITH GOOGLE
+                        Sign in with Google
                     </button>
                 </div>
 

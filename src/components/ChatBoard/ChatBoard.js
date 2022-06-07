@@ -190,9 +190,7 @@ export default class ChatBoard extends Component {
                         src={this.currentPeerUser.photoUrl}
                         alt="icon avatar"
                     />
-                    <span className="textHeaderChatBoard">
-            {this.currentPeerUser.nickname}
-          </span>
+                    <span className="textHeaderChatBoard">{this.currentPeerUser.nickname}</span>
                 </div>
 
                 {/* List сообщений */}

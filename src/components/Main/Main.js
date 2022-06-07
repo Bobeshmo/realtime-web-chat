@@ -9,7 +9,7 @@ import app from '../../base'
 import './Main.css'
 
 class Main extends Component {
-    constructor (props) {
+    constructor(props) {
         super(props)
         this.state = {
             isLoading: true,
@@ -22,7 +22,7 @@ class Main extends Component {
         this.listUser = []
     }
 
-    componentDidMount () {
+    componentDidMount() {
         this.checkLogin()
     }
 
@@ -106,7 +106,11 @@ class Main extends Component {
                                     {`Пользователь: ${item.data().nickname}`}
                                 </span>
                                 <span className="textItem">
-                                    {`Информация: ${item.data().aboutMe ? item.data().aboutMe : 'Нет информации'}`}
+                                    {
+                                        `Информация: ${item.data().aboutMe ?
+                                            item.data().aboutMe :
+                                            'Нет информации'}`
+                                    }
                                 </span>
                             </div>
                         </button>
@@ -119,7 +123,7 @@ class Main extends Component {
         }
     }
 
-    render () {
+    render() {
         return (
             <div className="root">
                 {/* Шапка */}

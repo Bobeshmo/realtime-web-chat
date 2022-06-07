@@ -49,4 +49,5 @@
     font-weight: bold;
     outline: 0;
     cursor: pointer;
+    text-transform: uppercase;
 }
